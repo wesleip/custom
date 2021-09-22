@@ -4,19 +4,19 @@
 
 sudo rm /var/lib/dpkg/lock-frontend ; sudo rm /var/cache/apt/archives/lock;
 
-## Update repositories ##
+## Update dos repositórios ##
 
 sudo apt update -y &&
 
-## Installation of packages and repositories ##
+## Instalação de pacotes e repositórios ##
 
 sudo apt install filezilla git snapd &&
 
-## Installation Snap packages ##
+## Instalação de pacotes Snap ##
 
 sudo snap install --classic code &&
 
-## Installation of external packages ##
+## Instalação de Pacotes Externos ##
 
 #--- Brave ---#
 
@@ -35,10 +35,10 @@ wget https://notion.davidbailey.codes/notion-linux.list ;
 sudo mv notion-linux.list /etc/apt/sources.list.d/notion-linux.list;
 sudo apt update && sudo apt install notion-desktop;
 
-## System update ##
+## Atualização do Sistema ##
 
 sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y &&
 
-## Finish ##
+## Fim ##
 
 echo "Finalizado"
